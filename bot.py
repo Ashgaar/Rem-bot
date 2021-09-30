@@ -1,12 +1,14 @@
 import discord
 from discord import message
 import coinflip
+import os
+from dotenv import load_dotenv
 
 
 
 
-TOKEN = 'Nzg4OTA4OTc1ODAxNjMwNzUw.X9qWvQ.HBmAsSHpJ93lTjTDI61fFEfPA5Y'
-GUILD = 'Goldshire'
+TOKEN = os.getenv('DISCORD_TOKEN')
+GUILD = os.getenv('GUILD')
 current_status = discord.Game('¤help for commands')
 
 
